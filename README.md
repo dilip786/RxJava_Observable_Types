@@ -76,7 +76,7 @@ A simple android project that demonstrates Types of observable patterns
 - Flowable: Flowable is typically used when an Observable is emitting huge amounts of data but the Observer is not able to handle this data emission. This is known as Back Pressure.
 
     ```
-var observable = Flowable.create(object : FlowableOnSubscribe<String> {
+    var observable = Flowable.create(object : FlowableOnSubscribe<String> {
             override fun subscribe(emitter: FlowableEmitter<String>) {
                 emitter.onNext("FlowableObserver")
 
