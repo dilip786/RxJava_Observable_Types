@@ -1,4 +1,4 @@
-### RxJava_Observable_Types
+### RxJava Observable Types
 A simple android project that demonstrates Types of observable patterns 
 
 #### Types of Observables
