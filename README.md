@@ -1,7 +1,7 @@
-# RxJava_Observable_Types
+### RxJava_Observable_Types
 A simple android project that demonstrates Types of observable patterns 
 
-### Types of Observables
+#### Types of Observables
 
 - Single : Single is an Observable that always emit only one value or throws an error. A typical use case of Single observable would be when we make a network call in Android and receive a response
   
