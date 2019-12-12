@@ -1,6 +1,38 @@
 ### RxJava Observable Types
 A simple android project that demonstrates Types of observable patterns 
 
+### Code Setup
+
+```
+
+Make sure you require Internet permission in your manifest file.
+
+<uses-permission android:name="android.permission.INTERNET" />
+
+We need following dependencies for this project. Add the lines below to your app/build.gradle in your app project under dependencies.
+
+def rxjava_version ="2.1.8"
+def rxandroid_version = "2.0.1"
+def retrofit_version ="2.0.2"
+def gson_version ="2.6.2"
+def retrofit_adapter ="1.0.0"
+
+dependencies 
+{
+	// Retrofit, Gson
+	implementation "com.google.code.gson:gson:$gson_version"
+	implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+	implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+	implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$retrofit_adapter"
+
+	// RxJava2
+	implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+	implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+}
+
+```
+
+
 #### Types of Observables
 
 - Single : Single is an Observable that always emit only one value or throws an error. A typical use case of Single observable would be when we make a network call in Android and receive a response
